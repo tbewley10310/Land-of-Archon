@@ -1,0 +1,56 @@
+using System;
+
+namespace Server.Items
+{
+    public class PumpkinTallUO : BaseLight
+    {
+        [Constructable]
+        public PumpkinTallUO()
+            : base(0x9935)
+        {
+            this.Name = "Tall Pumpkin UO";
+            if (Burnout)
+                this.Duration = TimeSpan.FromMinutes(20);
+            else
+                this.Duration = TimeSpan.Zero;
+
+            this.Burning = false;
+            this.Light = LightType.Circle150;
+            this.Weight = 1.0;
+        }
+
+        public PumpkinTallUO(Serial serial)
+            : base(serial)
+        {
+        }
+
+        public override int LitItemID
+        {
+            get
+            {
+                return 0x9936;
+            }
+        }
+        public override int UnlitItemID
+        {
+            get
+            {
+                return 0x9935;
+            }
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+
+            writer.Write((int)0); // version
+        }
+
+        public override void Deserialize(GenericReader reader)
+        {
+            base.Deserialize(reader);
+
+            int version = reader.ReadInt();
+        }
+    }
+}

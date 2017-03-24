@@ -1,0 +1,24 @@
+﻿Okay the last for this Month 
+
+A complete Milk harvest and Cheese production system:
+	
+	Object : A Milkbucklet ( i'm not sure àof the translation)  [it's milkbucket =]
+			: A cheese Form
+			
+			
+	with the Milkbucklet you can obtain milk from Cow , or sheep , or Goat 
+	You can Fill a bootle and drink it
+	You can fill a cheese form 
+	
+	
+	with the cheeseform ( depend of cooking skill)
+	you can obtain a cheese from cow or sheep or Goat ( sorry i have keep the name in english too because this cheese really exist and are very appreciated in many contry)
+	with a HIGH skill in cooking you can obtain Magic cheese ( Like magic Fish but with an effect more longer)
+	The cheese form make 2 real Hour to produce 1 cheese
+	
+	This system is totally independant of the Base system , and by this way compatible with all V32+ version
+	
+	just uncompress and enjoy 
+	
+	Tips: you can place this 2 items in the carpentry menu: "CheeseForm" and "SautALait".
+

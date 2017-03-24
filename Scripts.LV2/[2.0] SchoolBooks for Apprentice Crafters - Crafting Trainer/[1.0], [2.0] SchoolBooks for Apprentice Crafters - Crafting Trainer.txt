@@ -1,0 +1,22 @@
+[1.0], [2.0] SchoolBooks for Apprentice Crafters - Crafting Trainer
+
+" SchoolBooks for Apprentice Crafters" - CraftTrainer 
+
+This is an item/gump which allows players to raise their crafting skills without using resources or producing masses of crafted items. 
+
+MinSkill is the minimum amount of skill required in that skill before the item is usable.
+MaxSkill is the maximum amount of skill that the player can have in the skill and still use the item. 
+Ouch is the fatigue factor. Deals damage to stamina and hits during study.
+StudyTime is the amount of time between study attempts. (when to resend the gump)
+
+MinSkill and MaxSkill are setable in-game, using the item props, as well as Ouch and StudyTime.
+
+During the StudyTime delay, the bool value Studying is set to true. While Studying is true, players cannot doubleclick the item for a new gump.
+Due to the way this works, only one player can use the item at a time.
+
+Players must be within 2 tiles to use.
+
+Usage:
+Drop in your Custom folder
+[add CraftTrainer 
+

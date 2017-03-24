@@ -1,0 +1,3 @@
+Sripts/Items/Special/BulkOrderRewards
+
+The Deco Rewards.cs is needed for the deco rewards from BODs to function.

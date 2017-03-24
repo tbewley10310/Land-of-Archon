@@ -1,0 +1,99 @@
+
+Random Stats Artifacts (Random Magic Item Generation) 
+
+Got this idea once from reading http://www.uoguide.com/Random_Magic_Item_Generation_System 
+test [add xmlspawner ArtifactGlove    set it to 15 and spawn on ground and respawn a few times to see how they change do same for others if ya want
+also have a random artifact deed [add RAD it has all the gear/weap/shield/jewl/clothi i put in folder in it 
+
+everything is ITokunoDyable so it can be dyed with them dye bottles from zento
+-----------------------------------------------------------------------------------------------
+Armor Info (i didnt script up diffent .cs for them tossed each type into one .cs armor is based on leather)
+
+*will have Random hues from #s 5 to 3000 , soild black hues here & there
+*also can be 5 or 6 diffent itemids for each pisce 
+*resists will be random for each type from 4 to 13 just change the       ColdBonus = Utility.RandomMinMax(4, 13);  4/13 to want ya want
+*think like 28 diffent randoms name it can be left space keeper for ya to add ur own names in if ya wish look for     //"add ur extra names here",
+* ArtifactRarity random 1 to 10   !!!!!(some reason it changes the rarity everytime u move it in pack)!!!!
+ *can have up to 5 random stats added to it some can have 0 
+ (its very easy to adjest the settings for the %s of stats and how offen one gets added )
+  example  switch (Utility.Random(5)) changed to higher # for less chance to get stat added
+  exmaple Attributes.RegenHits = Utility.RandomMinMax(1, 4); the 1 is the minimal # if stat gets added and 4 is the highest it can be
+  (i have seen some junkers while testing 1stat with a -100luck, seen a nightsight/enchanepotions brittle)
+*can have Disadvantages
+50/50 chance for each of these
+brittle, -100 luck & loottype cursed
+(if you dont want the disadvantages to be 50% change the 2 to higher #)
+example (Utility.Random(2)) is 50% change it to 4 would be something like 1 outta 4 i quess 
+-----------------------------------------------------------------------------------------------
+Weapons Info (i didnt script up diffent .cs for them tossed each type into one .cs ) 
+///1 handers in one .cs and 2handers in another .cs based off katana & double axe with usebestskill///
+***wasnt sure on how to add random damage types if you know how toss up a comment for now they all have 20 each type***
+*will have Random hues from #s 5 to 3000 , soild black hues here & there
+*also can be 5 or 6 diffent itemids for each pisce 
+*chance for a random slayer 
+*1/4 chance for spellchanneling
+*can have up to 7 stats *Alot* only end up with 3 or 4 plus damagein usebestwep ,with the way i have it set up now
+*easy to change %s and rates same as in armor
+*think like 28 diffent randoms name it can be left space keeper for ya to add ur own names in if ya wish look for     //"add ur extra names here",
+*2handers same as 1handers but with twohand id's
+*can have Disadvantages
+50/50 chance for each of these
+brittle, -100 luck & loottype cursed
+(if you dont want the disadvantages to be 50% change the 2 to higher #)
+example (Utility.Random(2)) is 50% change it to 4 would be something like 1 outta 4 i quess 
+-----------------------------------------------------------------------------------------------
+Jewelry Info 
+*think like 28 diffent randoms name it can be left space keeper for ya to add ur own names in if ya wish look for     //"add ur extra names here",
+* resist random 0 to 5
+* two ids silver & gold pretty much the same picture when hued
+* up to 6 stats but way its set up probably only ever see 1 to 3 stats on one piesce
+*will have Random hues from #s 5 to 3000 , soild black hues here & there
+* will have one +5 skill bonus
+* 50/50 chance of 10 to 25 lowerregcost
+*can have Disadvantages
+50/50 chance for each of these
+brittle, -100 luck & loottype cursed
+(if you dont want the disadvantages to be 50% change the 2 to higher #)
+example (Utility.Random(2)) is 50% change it to 4 would be something like 1 outta 4 i quess 
+-----------------------------------------------------------------------------------------------
+Shield info
+* has 6 diffent ids
+* pretty much same set up as jewerly
+*insted of 1/4 chance of lrc its 1/2 chance of spellchannel
+* has same Disadvantages as rest ^^^
+------------------------------------------------------------------------------------------------
+Clothing Info
+Robes, halfaprons/obi , footware, capes
+* pretty much same set up as jewerly
+* diffent ids for each type in diffent .cs's -- capes/obi only have two each
+*footware as 0/5 resist chances --- robes obi capes dont have resists
+*clothing has low chance of stats and low %s
+* clothing has one +5 skill bonus even herding tasteid and camping lol 
+-------------------------------------------------------------------------------------------------
+added two monsters that drop the RAD random artifact deed 
+can use em if you want adject to how ya like
+
+1 has random names 15 diffent names it can be
+it body has    Hue = Utility.RandomDyedHue(); // so no soild black ones so far 
+it will yell 5 diffent sayings at you while fighting it
+bodyvalue will be random between 13 diffent id's there labeld too if u want to chane em
+chance to have 1 out of 3 weaponattacks
+30% chance of RAD
+[add xmlspawner RADM
+
+other one i made for a joke awhile back figured id toss rad on him for this
+hes based off LOTR's
+name can be random from Gollum or Sméagol 
+he talks to ''himself'' says 7 diffent things
+bodyvalue is a doubleganger or whatever that thing that wonders outside behind exdous dungeons is
+chance of 3 diffent WeaponAbilitys
+50% chance of a ArtifactRing & 30 for the RAD
+[add xmlspawner Gollum
+
+think that was everything if i forget anything sorry and sorry for spelling mistakes too
+THANKS TO Milva's Post on Scripting Attributes - A guide Created By Hammerhand - Scripting Attributes, 
+http://servuo.com/threads/scripting-attributes-a-guide-created-by-hammerhand-scripting-attributes.1121/
+
+Cause i copy/paste got alot of the parts like slayers & Attributes from there was nice not having to remeber spelling on them all or search thu files to find em
+
+Hope one person at least finds this pack useful even if they change most of it
