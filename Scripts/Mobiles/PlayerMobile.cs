@@ -1705,7 +1705,7 @@ namespace Server.Mobiles
 			{
 				if (Core.ML && IsPlayer())
 				{
-					return Math.Min(base.Str, 150);
+					return Math.Min(base.Str, 175);
 				}
 
 				return base.Str;
@@ -1720,7 +1720,7 @@ namespace Server.Mobiles
 			{
 				if (Core.ML && IsPlayer())
 				{
-					return Math.Min(base.Int, 150);
+					return Math.Min(base.Int, 175);
 				}
 
 				return base.Int;
@@ -1735,7 +1735,7 @@ namespace Server.Mobiles
 			{
 				if (Core.ML && IsPlayer())
 				{
-					return Math.Min(base.Dex, 150);
+					return Math.Min(base.Dex, 175);
 				}
 
 				return base.Dex;

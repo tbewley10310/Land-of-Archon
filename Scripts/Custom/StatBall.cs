@@ -85,9 +85,9 @@ namespace Server.Items
 			this.AddLabel(84, 156, 1152, "STR");
 			this.AddLabel(228, 156, 1152, "DEX");
 			this.AddLabel(368, 156, 1152, "INT");
-			this.AddTextEntry(134, 156, 50, 20, 1359, 0, "150");
-			this.AddTextEntry(278, 156, 50, 20, 1359, 1, "150");
-			this.AddTextEntry(411, 156, 50, 20, 1359, 2, "150");
+			this.AddTextEntry(134, 156, 50, 20, 1359, 0, "100");
+			this.AddTextEntry(278, 156, 50, 20, 1359, 1, "100");
+			this.AddTextEntry(411, 156, 50, 20, 1359, 2, "100");
 			this.AddButton(405, 221, 238, 240, 4, GumpButtonType.Reply, 0);
 			
 //  Swap these comment lines if using custom Cap variable.  Then set the number in the gump display here
@@ -95,7 +95,7 @@ namespace Server.Items
 //			this.AddLabel(114, 200, 1152, "* Stat totals should equal ");
 //			this.AddLabel(282, 200, 1152, m_From.StatCap.ToString() );
 //			this.AddLabel(313, 200, 1152, "*");
-			this.AddLabel(114, 200, 1152, "* Stat totals should equal 450 *");
+			this.AddLabel(114, 200, 1152, "* Stat totals should equal 300 *");
 
 		}
 
@@ -105,7 +105,7 @@ namespace Server.Items
 				return;
 
 //	Uncomment and change the 200 to the maximum value that people can set for the 3 stats combined
-			Cap = 450;
+			Cap = 300;
 						
             TextRelay s = info.GetTextEntry( 0 );
             try

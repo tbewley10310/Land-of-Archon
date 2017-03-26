@@ -12,7 +12,7 @@ namespace Server
     {
 
 
-        private int switches = 10;
+        private int switches = 15;
         private SkillBall m_SkillBall;
         private double val = 100;
 
@@ -27,7 +27,7 @@ namespace Server
             m_SkillBall = ball;
             this.AddPage(0);
             this.AddBackground(39, 33, 750, 500, 9200);
-            this.AddLabel(67, 41, 1153, @"Please select your 10 skills");
+            this.AddLabel(67, 41, 1153, @"Please select your 15 skills");
             this.AddButton(80, 500, 2071, 2072, (int)Buttons.Close, GumpButtonType.Reply, 0);
             this.AddBackground(52, 60, 720, 430, 9350);
             this.AddPage(1);
@@ -191,7 +191,7 @@ namespace Server
                         else if (info.Switches.Length > switches)
                         {
                             m.SendGump(new SkilllimPickGump(m_SkillBall, m));
-                            m.SendMessage(0, "Please get rid of {0} skills, you have exceeded the 10 skills that are allowed.", info.Switches.Length - switches);
+                            m.SendMessage(0, "Please get rid of {0} skills, you have exceeded the 15 skills that are allowed.", info.Switches.Length - switches);
                             break;
 
                         }
@@ -230,7 +230,7 @@ namespace Server
         {
             Weight = 1.0;
             Hue = 1153;
-            Name = "Use this to set 10 skills to 100";
+            Name = "Use this to set 15 skills to 100";
 			LootType = LootType.Blessed;
             Movable = false;
         }
@@ -240,7 +240,7 @@ namespace Server
 
             if (m.Backpack != null && m.Backpack.GetAmount(typeof(SkillBall)) > 0)
             {
-                m.SendMessage("Please choose  your 10 skills to set to 10x GM.");
+                m.SendMessage("Please choose  your 15 skills to set to 15x GM.");
                 m.CloseGump(typeof(SkilllimPickGump));
                 m.SendGump(new SkilllimPickGump(this, m));
             }
